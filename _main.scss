@@ -1,0 +1,26 @@
+main{
+    background-color: hsl(235, 21%, 11%);
+    height: 100vh;
+    padding: 1.5rem;
+
+    font-size: 0.8rem;
+
+    .checkbox {
+        width: 1.3em;
+        height: 1.3em;
+        background-color: white;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+    .checkbox:checked {
+        background-color: gray;
+        background-image: url("./images/icon-check.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
