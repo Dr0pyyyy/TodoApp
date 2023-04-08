@@ -29,6 +29,13 @@ main .app {
 main .app #create-new {
   margin-bottom: 1rem;
 }
+main .app #create-new input[type=text] {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+}
 main .app .todos {
   background-color: hsl(235, 24%, 19%);
   border-radius: 0.2rem;
