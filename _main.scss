@@ -1,26 +1,59 @@
-main{
+main {
     background-color: hsl(235, 21%, 11%);
     height: 100vh;
     padding: 1.5rem;
 
     font-size: 0.8rem;
 
-    .checkbox {
-        width: 1.3em;
-        height: 1.3em;
-        background-color: white;
-        border-radius: 50%;
-        vertical-align: middle;
-        border: 1px solid #ddd;
-        appearance: none;
-        outline: none;
-        cursor: pointer;
-    }
-    
-    .checkbox:checked {
-        background-color: gray;
-        background-image: url("./images/icon-check.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+    .app {
+        position: absolute;
+        top: 7rem;
+
+        #create-new {
+            margin-bottom: 1rem;
+        }
+
+        .todos {
+            background-color: hsl(235, 24%, 19%);
+            border-radius: 0.2rem;
+            width: 20rem;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+
+            background-color: hsl(235, 24%, 19%);
+            padding: 0.8rem;
+            border-radius: 0.2rem;
+
+            .task-content {
+                display: flex;
+                align-items: center;
+
+                .checkbox {
+                    margin: 0;
+                    width: 1.5em;
+                    height: 1.5em;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    border: 1px solid #ddd;
+                    appearance: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .checkbox:checked {
+                    background-image: url("./images/icon-check.svg"), (linear-gradient(135deg, rgba(87, 221, 255, 1) 0%, rgba(192, 88, 243, 1) 100%));
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                p{
+                    padding-left: 1rem;
+                    padding-top: 0.2rem;
+                }
+            }
+        }
     }
 }
