@@ -2,7 +2,6 @@ main {
     background-color: hsl(235, 21%, 11%);
     height: 100vh;
     padding: 1.5rem;
-
     font-size: 0.8rem;
 
     .app {
@@ -12,7 +11,7 @@ main {
         #create-new {
             margin-bottom: 1rem;
 
-            input[type=text]{
+            input[type=text] {
                 background-color: transparent;
                 color: white;
                 outline: none;
@@ -25,8 +24,53 @@ main {
             background-color: hsl(235, 24%, 19%);
             border-radius: 0.2rem;
             width: 20rem;
+
+            .control {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.8rem;
+            }
         }
 
+        .filter {
+            padding: 0.8rem;
+            margin-top: 1rem;
+
+            a:hover {
+                color: hsl(220, 98%, 61%);
+            }
+        }
+
+        .tip{
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0rem;
+
+            p{
+                color: rgb(255, 255, 255, 0.3);
+            }
+        }
+
+        //This code edits every element that has checkbox class
+        .checkbox {
+            margin: 0;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .checkbox:checked {
+            background-image: url("./images/icon-check.svg"), (linear-gradient(135deg, rgba(87, 221, 255, 1) 0%, rgba(192, 88, 243, 1) 100%));
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        //This code is for every task of any type
         .task {
             display: flex;
             justify-content: space-between;
@@ -39,29 +83,19 @@ main {
                 display: flex;
                 align-items: center;
 
-                .checkbox {
-                    margin: 0;
-                    width: 1.5em;
-                    height: 1.5em;
-                    border-radius: 50%;
-                    vertical-align: middle;
-                    border: 1px solid #ddd;
-                    appearance: none;
-                    outline: none;
-                    cursor: pointer;
-                }
 
-                .checkbox:checked {
-                    background-image: url("./images/icon-check.svg"), (linear-gradient(135deg, rgba(87, 221, 255, 1) 0%, rgba(192, 88, 243, 1) 100%));
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-
-                p{
+                p {
                     padding-left: 1rem;
                     padding-top: 0.2rem;
                 }
             }
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255, 0.3);
+            padding: 0rem 0.5rem;
+            font-weight: 700;
         }
     }
 }

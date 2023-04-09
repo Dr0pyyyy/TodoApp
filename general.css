@@ -41,18 +41,27 @@ main .app .todos {
   border-radius: 0.2rem;
   width: 20rem;
 }
-main .app .task {
+main .app .todos .control {
   display: flex;
   justify-content: space-between;
-  background-color: hsl(235, 24%, 19%);
   padding: 0.8rem;
-  border-radius: 0.2rem;
 }
-main .app .task .task-content {
+main .app .filter {
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+main .app .filter a:hover {
+  color: hsl(220, 98%, 61%);
+}
+main .app .tip {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
 }
-main .app .task .task-content .checkbox {
+main .app .tip p {
+  color: rgba(255, 255, 255, 0.3);
+}
+main .app .checkbox {
   margin: 0;
   width: 1.5em;
   height: 1.5em;
@@ -65,14 +74,31 @@ main .app .task .task-content .checkbox {
   outline: none;
   cursor: pointer;
 }
-main .app .task .task-content .checkbox:checked {
+main .app .checkbox:checked {
   background-image: url("./images/icon-check.svg"), linear-gradient(135deg, rgb(87, 221, 255) 0%, rgb(192, 88, 243) 100%);
   background-repeat: no-repeat;
   background-position: center;
 }
+main .app .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(235, 24%, 19%);
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+}
+main .app .task .task-content {
+  display: flex;
+  align-items: center;
+}
 main .app .task .task-content p {
   padding-left: 1rem;
   padding-top: 0.2rem;
+}
+main .app a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  padding: 0rem 0.5rem;
+  font-weight: 700;
 }
 
 html {
