@@ -1,5 +1,10 @@
+$bg-color: hsl(235, 21%, 11%);
+$task-bg: hsl(235, 24%, 19%);
+$gray-text: rgb(255, 255, 255, 0.3);
+$white-text: rgb(255, 255, 255);
+
 main {
-    background-color: hsl(235, 21%, 11%);
+    background-color: $bg-color;
     height: 100vh;
     padding: 1.5rem;
     font-size: 0.8rem;
@@ -13,7 +18,7 @@ main {
 
             input[type=text] {
                 background-color: transparent;
-                color: white;
+                color: $white-text;
                 outline: none;
                 border: none;
                 padding-left: 1rem;
@@ -21,7 +26,7 @@ main {
         }
 
         .todos {
-            background-color: hsl(235, 24%, 19%);
+            background-color: $task-bg;
             border-radius: 0.2rem;
             width: 20rem;
 
@@ -29,6 +34,10 @@ main {
                 display: flex;
                 justify-content: space-between;
                 padding: 0.8rem;
+
+                p{
+                    color: $gray-text;
+                }
             }
         }
 
@@ -47,7 +56,7 @@ main {
             padding: 2rem 0rem;
 
             p{
-                color: rgb(255, 255, 255, 0.3);
+                color: $gray-text;
             }
         }
 
@@ -58,7 +67,7 @@ main {
             height: 1.5em;
             border-radius: 50%;
             vertical-align: middle;
-            border: 1px solid #ddd;
+            border: 1px solid $gray-text;
             appearance: none;
             outline: none;
             cursor: pointer;
@@ -75,7 +84,7 @@ main {
             display: flex;
             justify-content: space-between;
 
-            background-color: hsl(235, 24%, 19%);
+            background-color: $task-bg;
             padding: 0.8rem;
             border-radius: 0.2rem;
 
@@ -93,7 +102,7 @@ main {
 
         a {
             text-decoration: none;
-            color: rgb(255, 255, 255, 0.3);
+            color: $gray-text;
             padding: 0rem 0.5rem;
             font-weight: 700;
         }

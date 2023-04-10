@@ -31,7 +31,7 @@ main .app #create-new {
 }
 main .app #create-new input[type=text] {
   background-color: transparent;
-  color: white;
+  color: rgb(255, 255, 255);
   outline: none;
   border: none;
   padding-left: 1rem;
@@ -45,6 +45,9 @@ main .app .todos .control {
   display: flex;
   justify-content: space-between;
   padding: 0.8rem;
+}
+main .app .todos .control p {
+  color: rgba(255, 255, 255, 0.3);
 }
 main .app .filter {
   padding: 0.8rem;
@@ -67,7 +70,7 @@ main .app .checkbox {
   height: 1.5em;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
