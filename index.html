@@ -19,23 +19,28 @@
       <a href="#"><img src="./images/icon-sun.svg" alt="sun icon" /></a>
     </header>
     <main>
-
       <div class="app">
-
         <div id="create-new" class="task">
           <div class="task-content">
             <input type="checkbox" class="checkbox" />
-            <input type="text" placeholder="Create a new todo...">
+            <input
+              class="text-input"
+              type="text"
+              placeholder="Create a new todo..."
+            />
           </div>
         </div>
 
         <div class="todos">
+
+          <div class="new-task"></div>
+
           <div class="task">
             <div class="task-content">
               <input type="checkbox" class="checkbox" />
               <p>Complete online JavaScript course</p>
             </div>
-            <a href="#" class="exit"
+            <a href="#"
               ><img src="./images/icon-cross.svg" alt="cross icon"
             /></a>
           </div>
@@ -45,7 +50,7 @@
               <input type="checkbox" class="checkbox" />
               <p>Jog around the park 3x</p>
             </div>
-            <a href="#" class="exit"
+            <a href="#"
               ><img src="./images/icon-cross.svg" alt="cross icon"
             /></a>
           </div>
@@ -55,7 +60,7 @@
               <input type="checkbox" class="checkbox" />
               <p>10 minutes meditation</p>
             </div>
-            <a href="#" class="exit"
+            <a href="#"
               ><img src="./images/icon-cross.svg" alt="cross icon"
             /></a>
           </div>
@@ -65,7 +70,7 @@
               <input type="checkbox" class="checkbox" />
               <p>Read for 1 hour</p>
             </div>
-            <a href="#" class="exit"
+            <a href="#"
               ><img src="./images/icon-cross.svg" alt="cross icon"
             /></a>
           </div>
@@ -75,7 +80,7 @@
               <input type="checkbox" class="checkbox" />
               <p>Pick up groceries</p>
             </div>
-            <a href="#" class="exit"
+            <a href="#"
               ><img src="./images/icon-cross.svg" alt="cross icon"
             /></a>
           </div>
@@ -83,27 +88,27 @@
           <div class="task">
             <div class="task-content">
               <input type="checkbox" class="checkbox" />
-              <p>Complete Todo App on FrontendMentor</p>
+              <p>Complete Todo App</p>
             </div>
-            <a href="#" class="exit"
+            <a href="#"
               ><img src="./images/icon-cross.svg" alt="cross icon"
             /></a>
           </div>
-          
+
           <div class="control">
-            <p>5 items left</p>
+            <p><span>5</span> items left</p>
             <a href="#">Clear Completed</a>
           </div>
         </div>
 
         <div class="filter task">
-            <a href="#">All</a>
-            <a href="#">Active</a>
-            <a href="#">Completed</a>
+          <a href="#">All</a>
+          <a href="#">Active</a>
+          <a href="#">Completed</a>
         </div>
 
         <div class="tip">
-            <p>Drag and drop to reader list</p>
+          <p>Drag and drop to reader list</p>
         </div>
       </div>
     </main>
