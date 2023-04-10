@@ -17,9 +17,10 @@ header img {
 }
 
 main {
+  display: flex;
+  justify-content: center;
   background-color: hsl(235, 21%, 11%);
   height: 100vh;
-  padding: 1.5rem;
   font-size: 0.8rem;
 }
 main .app {

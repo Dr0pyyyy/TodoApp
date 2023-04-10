@@ -4,9 +4,11 @@ $gray-text: rgb(255, 255, 255, 0.3);
 $white-text: rgb(255, 255, 255);
 
 main {
+    display: flex;
+    justify-content: center;
+
     background-color: $bg-color;
     height: 100vh;
-    padding: 1.5rem;
     font-size: 0.8rem;
 
     .app {
