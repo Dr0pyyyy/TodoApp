@@ -57,6 +57,9 @@ main .app .filter {
 main .app .filter a:hover {
   color: hsl(220, 98%, 61%);
 }
+main .app .filter .active {
+  color: hsl(220, 98%, 61%);
+}
 main .app .tip {
   display: flex;
   justify-content: center;

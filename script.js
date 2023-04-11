@@ -25,8 +25,6 @@ counter.innerHTML = tasks.length - 2;
 //Add new task
 document.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
-    const newTask = document.querySelector(".text-input");
-
     //Creating div "task"
     const newDiv = document.createElement("div");
     newDiv.classList.add("task");
@@ -41,16 +39,40 @@ document.addEventListener("keyup", function (event) {
     taskContent.appendChild(input);
 
     const p = document.createElement("p");
-    p.innerHTML = newTask.value;
+    p.innerHTML = document.querySelector(".text-input").value;
     taskContent.appendChild(p);
+
+    const a = document.createElement("a");
+    a.href = "#";
+    newDiv.appendChild(a);
 
     const img = document.createElement("img");
     img.src = "./images/icon-cross.svg";
-    newDiv.appendChild(img);
+    a.appendChild(img);
 
     //Adding div to HTML
     const currentDiv = document.querySelector(".todos");
     const test = document.querySelector(".new-task");
     currentDiv.insertBefore(newDiv, test);
   }
+});
+
+//Deleting tasks
+const deleteIcons = document.querySelectorAll(".task .delete-icon");
+deleteIcons.forEach(deleteIcon => {
+  deleteIcon.addEventListener("click", function () {
+    deleteIcon.parentElement.style.display = "none";
+  });
+});
+
+//Filter
+const filterItems = document.querySelectorAll(".filter a");
+filterItems.forEach(filterItem => {
+  filterItem.addEventListener("click", function () {
+    filterItems.forEach(element => {
+      element.classList.remove("active");
+    });
+    
+    filterItem.classList.add("active");
+  });
 });

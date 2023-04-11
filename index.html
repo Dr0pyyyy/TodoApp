@@ -1,117 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./general.css" />
-  </head>
-  <body>
-    <header>
-      <h1>TODO</h1>
-      <a href="#"><img src="./images/icon-sun.svg" alt="sun icon" /></a>
-    </header>
-    <main>
-      <div class="app">
-        <div id="create-new" class="task">
-          <div class="task-content">
-            <input type="checkbox" class="checkbox" />
-            <input
-              class="text-input"
-              type="text"
-              placeholder="Create a new todo..."
-            />
-          </div>
-        </div>
 
-        <div class="todos">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./general.css" />
+</head>
 
-          <div class="new-task"></div>
-
-          <div class="task">
-            <div class="task-content">
-              <input type="checkbox" class="checkbox" />
-              <p>Complete online JavaScript course</p>
-            </div>
-            <a href="#"
-              ><img src="./images/icon-cross.svg" alt="cross icon"
-            /></a>
-          </div>
-
-          <div class="task">
-            <div class="task-content">
-              <input type="checkbox" class="checkbox" />
-              <p>Jog around the park 3x</p>
-            </div>
-            <a href="#"
-              ><img src="./images/icon-cross.svg" alt="cross icon"
-            /></a>
-          </div>
-
-          <div class="task">
-            <div class="task-content">
-              <input type="checkbox" class="checkbox" />
-              <p>10 minutes meditation</p>
-            </div>
-            <a href="#"
-              ><img src="./images/icon-cross.svg" alt="cross icon"
-            /></a>
-          </div>
-
-          <div class="task">
-            <div class="task-content">
-              <input type="checkbox" class="checkbox" />
-              <p>Read for 1 hour</p>
-            </div>
-            <a href="#"
-              ><img src="./images/icon-cross.svg" alt="cross icon"
-            /></a>
-          </div>
-
-          <div class="task">
-            <div class="task-content">
-              <input type="checkbox" class="checkbox" />
-              <p>Pick up groceries</p>
-            </div>
-            <a href="#"
-              ><img src="./images/icon-cross.svg" alt="cross icon"
-            /></a>
-          </div>
-
-          <div class="task">
-            <div class="task-content">
-              <input type="checkbox" class="checkbox" />
-              <p>Complete Todo App</p>
-            </div>
-            <a href="#"
-              ><img src="./images/icon-cross.svg" alt="cross icon"
-            /></a>
-          </div>
-
-          <div class="control">
-            <p><span>5</span> items left</p>
-            <a href="#">Clear Completed</a>
-          </div>
-        </div>
-
-        <div class="filter task">
-          <a href="#">All</a>
-          <a href="#">Active</a>
-          <a href="#">Completed</a>
-        </div>
-
-        <div class="tip">
-          <p>Drag and drop to reader list</p>
+<body>
+  <header>
+    <h1>TODO</h1>
+    <a href="#"><img src="./images/icon-sun.svg" alt="sun icon" /></a>
+  </header>
+  <main>
+    <div class="app">
+      <div id="create-new" class="task">
+        <div class="task-content">
+          <input type="checkbox" class="checkbox" />
+          <input class="text-input" type="text" placeholder="Create a new todo..." />
         </div>
       </div>
-    </main>
-  </body>
-  <script src="./script.js"></script>
+
+      <div class="todos">
+
+        <div class="new-task"></div>
+
+        <div class="task">
+          <div class="task-content">
+            <input type="checkbox" class="checkbox" />
+            <p>Complete online JavaScript course</p>
+          </div>
+          <a class="delete-icon" href="#"><img src="./images/icon-cross.svg" alt="cross icon" /></a>
+        </div>
+
+        <div class="task">
+          <div class="task-content">
+            <input type="checkbox" class="checkbox" />
+            <p>Jog around the park 3x</p>
+          </div>
+          <a class="delete-icon" href="#"><img src="./images/icon-cross.svg" alt="cross icon" /></a>
+        </div>
+
+        <div class="task">
+          <div class="task-content">
+            <input type="checkbox" class="checkbox" />
+            <p>10 minutes meditation</p>
+          </div>
+          <a class="delete-icon" href="#"><img src="./images/icon-cross.svg" alt="cross icon" /></a>
+        </div>
+
+        <div class="task">
+          <div class="task-content">
+            <input type="checkbox" class="checkbox" />
+            <p>Read for 1 hour</p>
+          </div>
+          <a class="delete-icon" href="#"><img src="./images/icon-cross.svg" alt="cross icon" /></a>
+        </div>
+
+        <div class="task">
+          <div class="task-content">
+            <input type="checkbox" class="checkbox" />
+            <p>Pick up groceries</p>
+          </div>
+          <a class="delete-icon" href="#"><img src="./images/icon-cross.svg" alt="cross icon" /></a>
+        </div>
+
+        <div class="task">
+          <div class="task-content">
+            <input type="checkbox" class="checkbox" />
+            <p>Complete Todo App</p>
+          </div>
+          <a class="delete-icon" href="#"><img src="./images/icon-cross.svg" alt="cross icon" /></a>
+        </div>
+
+        <div class="control">
+          <p><span>5</span> items left</p>
+          <a href="#">Clear Completed</a>
+        </div>
+      </div>
+
+      <div class="filter task">
+        <a class="active" href="#">All</a>
+        <a href="#">Active</a>
+        <a href="#">Completed</a>
+      </div>
+
+      <div class="tip">
+        <p>Drag and drop to reader list</p>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./script.js"></script>
+
 </html>
