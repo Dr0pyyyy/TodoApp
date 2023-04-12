@@ -18,9 +18,11 @@ checkboxes.forEach((element) => {
 });
 
 //Counter
-const counter = document.querySelector(".control p span");
-const tasks = document.querySelectorAll(".task");
-counter.innerHTML = tasks.length - 2;
+document.onclick = function countTasks () {
+  const counter = document.querySelector(".control p span");
+  const tasks = document.querySelectorAll(".task");
+  counter.innerHTML = tasks.length - 2;
+}
 
 //Add new task
 document.addEventListener("keyup", function (event) {
@@ -89,7 +91,7 @@ filterItems.forEach(filterItem => {
           if (todoTaskInput.checked) {
             todoTask.style.display = "none";
           }
-          else{
+          else {
             todoTask.style.display = "flex";
           }
         });
@@ -100,7 +102,7 @@ filterItems.forEach(filterItem => {
           if (todoTaskInput.checked) {
             todoTask.style.display = "flex";
           }
-          else{
+          else {
             todoTask.style.display = "none";
           }
         });
