@@ -28,6 +28,7 @@ document.addEventListener("keyup", function (event) {
     //Creating div "task"
     const newDiv = document.createElement("div");
     newDiv.classList.add("task");
+    newDiv.classList.add("todo-task");
 
     const taskContent = document.createElement("div");
     taskContent.classList.add("task-content");
@@ -72,7 +73,38 @@ filterItems.forEach(filterItem => {
     filterItems.forEach(element => {
       element.classList.remove("active");
     });
-    
+
     filterItem.classList.add("active");
+
+    const todotasks = document.querySelectorAll(".todo-task");
+    switch (filterItem.innerHTML) {
+      case "All":
+        todotasks.forEach(todoTask => {
+          todoTask.style.display = "flex";
+        });
+        break;
+      case "Active":
+        todotasks.forEach(todoTask => {
+          const todoTaskInput = todoTask.querySelector("input");
+          if (todoTaskInput.checked) {
+            todoTask.style.display = "none";
+          }
+          else{
+            todoTask.style.display = "flex";
+          }
+        });
+        break;
+      case "Completed":
+        todotasks.forEach(todoTask => {
+          const todoTaskInput = todoTask.querySelector("input");
+          if (todoTaskInput.checked) {
+            todoTask.style.display = "flex";
+          }
+          else{
+            todoTask.style.display = "none";
+          }
+        });
+        break;
+    }
   });
 });
